@@ -1,0 +1,5 @@
+annotation:
+  image: quay.io/ontotext/cesliteralresponsefiltermock
+  ports:
+  - "9110:9110"
+  - "9111:9111"

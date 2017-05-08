@@ -1,0 +1,1059 @@
+{
+  "id": null,
+  "feature-set": [],
+  "document-parts": {
+    "feature-set": [
+      {
+        "name": {
+          "type": "XS_STRING",
+          "name": "Name"
+        },
+        "value": {
+          "type": "XS_STRING",
+          "lang": null,
+          "value": "blogPost;"
+        }
+      },
+      {
+        "name": {
+          "type": "XS_STRING",
+          "name": "encoding"
+        },
+        "value": {
+          "type": "XS_STRING",
+          "lang": null,
+          "value": "UTF-8"
+        }
+      },
+      {
+        "name": {
+          "type": "XS_STRING",
+          "name": "PublishDate"
+        },
+        "value": {
+          "type": "XS_STRING",
+          "lang": null,
+          "value": "2014-06-26T13:00:55Z"
+        }
+      },
+      {
+        "name": {
+          "type": "XS_STRING",
+          "name": "IPTC"
+        },
+        "value": {
+          "type": "XS_STRING",
+          "lang": null,
+          "value": ""
+        }
+      },
+      {
+        "name": {
+          "type": "XS_STRING",
+          "name": "isDebugMode"
+        },
+        "value": {
+          "type": "XS_BOOLEAN",
+          "lang": null,
+          "value": "false"
+        }
+      }
+    ],
+    "document-part": [
+      {
+        "feature-set": [],
+        "id": "1",
+        "part": "DESCRIPTION",
+        "content": {
+          "text": "<p>This is the test description of this article about Dry Gas.</p>",
+          "node": [
+            {
+              "id": "54",
+              "offset": 54
+            },
+            {
+              "id": "61",
+              "offset": 61
+            }
+          ]
+        }
+      },
+      {
+        "feature-set": [],
+        "id": "2",
+        "part": "HEADLINE",
+        "content": {
+          "text": "<p>Test title by karthik from London.</p>",
+          "node": [
+            {
+              "id": "98",
+              "offset": 30
+            },
+            {
+              "id": "104",
+              "offset": 36
+            }
+          ]
+        }
+      },
+      {
+        "feature-set": [],
+        "id": "3",
+        "part": "LEAD",
+        "content": {
+          "text": "<p>Iron prices increased in middle east.</p>\n\n",
+          "node": [
+            {
+              "id": "114",
+              "offset": 3
+            },
+            {
+              "id": "118",
+              "offset": 7
+            },
+            {
+              "id": "119",
+              "offset": 8
+            },
+            {
+              "id": "125",
+              "offset": 14
+            },
+            {
+              "id": "139",
+              "offset": 28
+            },
+            {
+              "id": "150",
+              "offset": 39
+            }
+          ]
+        }
+      },
+      {
+        "feature-set": [],
+        "id": "4",
+        "part": "BODY",
+        "content": {
+          "text": "This text contains all the space separated structural elements aboout Aluminium in India, the company Algeria Nippon Gas, Infrastructure is PNG Floating LNG Terminal, and Subject Area is Investments.",
+          "node": [
+            {
+              "id": "229",
+              "offset": 70
+            },
+            {
+              "id": "238",
+              "offset": 79
+            },
+            {
+              "id": "242",
+              "offset": 83
+            },
+            {
+              "id": "247",
+              "offset": 88
+            },
+            {
+              "id": "261",
+              "offset": 102
+            },
+            {
+              "id": "279",
+              "offset": 120
+            },
+            {
+              "id": "281",
+              "offset": 122
+            },
+            {
+              "id": "295",
+              "offset": 136
+            },
+            {
+              "id": "312",
+              "offset": 153
+            },
+            {
+              "id": "315",
+              "offset": 156
+            },
+            {
+              "id": "346",
+              "offset": 187
+            },
+            {
+              "id": "357",
+              "offset": 198
+            }
+          ]
+        }
+      },
+      {
+        "feature-set": [],
+        "id": "5",
+        "part": "DOCUMENT_LEVEL",
+        "content": {
+          "text": "",
+          "node": [{
+            "id": "8000",
+            "offset": "0"
+          }]
+        }
+      }
+    ]
+  },
+  "annotation-sets": [
+    {
+      "name": "",
+      "ref": null,
+      "annotation": []
+    },
+    {
+      "name": "Original markups",
+      "ref": null,
+      "annotation": []
+    },
+    {
+      "name": "Final",
+      "ref": null,
+      "annotation": [
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Commodity/Ironores"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Iron"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "208"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "subclasses"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity;"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Iron Ores;"
+              }
+            }
+          ],
+          "id": "160",
+          "startnode": "114",
+          "endnode": "118",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Port/London"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Port"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "London"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "18422"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            }
+          ],
+          "id": "150",
+          "startnode": "98",
+          "endnode": "104",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Subject/Facilities"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Subject"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Infrastructure"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "31889"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Facilities;"
+              }
+            }
+          ],
+          "id": "151",
+          "startnode": "281",
+          "endnode": "295",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Commodity/LNG"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "LNG"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "216"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "subclasses"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity;"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "LNG;"
+              }
+            }
+          ],
+          "id": "152",
+          "startnode": "312",
+          "endnode": "315",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Subject/Investments"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Subject"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Investments"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "31978"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Investments;"
+              }
+            }
+          ],
+          "id": "153",
+          "startnode": "346",
+          "endnode": "357",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Subject/Prices"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Subject"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "prices"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "32022"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Prices;"
+              }
+            }
+          ],
+          "id": "154",
+          "startnode": "119",
+          "endnode": "125",
+          "type": "Lookup",
+          "status": "Rejected",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Region/MiddleEast"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Region"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "middle east"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "28398"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            }
+          ],
+          "id": "155",
+          "startnode": "139",
+          "endnode": "150",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Commodity/Drygas"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Dry Gas"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "128"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "subclasses"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity;"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Dry gas;"
+              }
+            }
+          ],
+          "id": "156",
+          "startnode": "54",
+          "endnode": "61",
+          "type": "Lookup",
+          "status": "Accepted",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Commodity/Aluminum"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Aluminium"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "30"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "subclasses"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Commodity;"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "preferredLabel"
+              },
+              "value": {
+                "type": "TNS_COLLECTION",
+                "lang": null,
+                "value": "Aluminum;"
+              }
+            }
+          ],
+          "id": "157",
+          "startnode": "229",
+          "endnode": "238",
+          "type": "Lookup",
+          "status": "Suggested",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/Region/IN-India"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#Region"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "India"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "28179"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            }
+          ],
+          "id": "158",
+          "startnode": "242",
+          "endnode": "247",
+          "type": "Lookup",
+          "status": "Rejected",
+          "generated": false
+        },
+        {
+          "feature-set": [
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "inst"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/AlertProduct/PCT0974"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "class"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "http://data.platts.com/ontology#PageNumber"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "string"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "Platts Oneok Bidweek Physical Basis Prices"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "id"
+              },
+              "value": {
+                "type": "XS_INTEGER",
+                "lang": null,
+                "value": "639"
+              }
+            },
+            {
+              "name": {
+                "type": "XS_STRING",
+                "name": "tokenFeature"
+              },
+              "value": {
+                "type": "XS_STRING",
+                "lang": null,
+                "value": "string"
+              }
+            }
+          ],
+          "id": "159",
+          "startnode": "261",
+          "endnode": "279",
+          "type": "Lookup",
+          "status": "Accepted",
+          "generated": false
+        }
+      ]
+    }
+  ]
+}

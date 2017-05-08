@@ -1,0 +1,17 @@
+logging:
+ level: INFO
+ loggers:
+    "com.fasterxml.jackson.databind.JsonMappingException": INFO
+server:
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  adminContextPath: /
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 9110
+  adminConnectors:
+    - type: http
+      port: 9111
+swagger:
+  resourcePackage: com.ontotext.cesliteralresponsefilter.resource

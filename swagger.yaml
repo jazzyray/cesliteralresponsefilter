@@ -1,0 +1,278 @@
+---
+swagger: "2.0"
+info:
+  description: "A very, very simple mock which adds literal features to an echo'd\
+    \ CES document"
+  version: "v0.0.1"
+  title: "CES API Literal Response Ext Mock"
+  termsOfService: "http://www.yourterms.com"
+  contact:
+    name: "Jem Rayfield"
+    url: "http://ontotext.com"
+    email: "jem.rayfield@ontotext.com"
+host: "localhost:9110"
+basePath: "/extract"
+tags:
+- name: "CES Literal Response Filter Mock API"
+schemes:
+- "http"
+- "https"
+paths:
+  /worker/extract:
+    post:
+      tags:
+      - "CES Literal Response Filter Mock API"
+      summary: "Extract"
+      description: ""
+      operationId: "annotate"
+      consumes:
+      - "application/vnd.ontotext.ces.document+json; charset=utf-8"
+      - "application/vnd.ontotext.ces.document+xml; charset=utf-8"
+      - "application/vnd.gate.ces.document+xml; charset=utf-8"
+      produces:
+      - "application/vnd.ontotext.ces+json; charset=utf-8"
+      - "application/vnd.ontotext.ces+xml; charset=utf-8"
+      - "application/vnd.ontotext.ces.document+json; charset=utf-8"
+      - "application/vnd.ontotext.ces.document+xml; charset=utf-8"
+      - "application/vnd.gate.ces.document+xml; charset=utf-8"
+      - "application/vnd.ontotext.ces.document+mate; charset=utf-8"
+      parameters:
+      - name: "timeout"
+        in: "query"
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "debug"
+        in: "query"
+        required: false
+        type: "boolean"
+        default: false
+      - in: "body"
+        name: "body"
+        description: "Document to annotate"
+        required: true
+        schema:
+          $ref: "#/definitions/Document"
+      - name: "X-Request-ID"
+        in: "header"
+        description: "Transaction Id"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/Document"
+          headers:
+            X-Cache:
+              type: "boolean"
+              description: "Explains whether or not a cache was used"
+            ETag:
+              type: "string"
+              description: "Annotated Content ETag for cache control"
+            Vary:
+              type: "string"
+              description: "Make sure proxies cache by Vary"
+            Allow:
+              type: "string"
+              description: "CORS Allowed Methods"
+        202:
+          description: "Success"
+          headers:
+            X-Cache:
+              type: "boolean"
+              description: "Explains whether or not a cache was used"
+            ETag:
+              type: "string"
+              description: "Annotated Content ETag for cache control"
+            Vary:
+              type: "string"
+              description: "Make sure proxies cache by Vary"
+            Allow:
+              type: "string"
+              description: "CORS Allowed Methods"
+        400:
+          description: "Invalid Annotated Content Id supplied"
+        404:
+          description: "Annotated Content not found"
+definitions:
+  Annotation:
+    type: "object"
+    properties:
+      feature-set:
+        type: "array"
+        xml:
+          name: "feature"
+          namespace: "http://www.ontotext.com/DocumentSchema"
+          wrapped: true
+        items:
+          $ref: "#/definitions/Feature"
+      id:
+        type: "string"
+        xml:
+          attribute: true
+      startnode:
+        type: "string"
+        xml:
+          attribute: true
+      endnode:
+        type: "string"
+        xml:
+          attribute: true
+      type:
+        type: "string"
+        xml:
+          attribute: true
+      status:
+        type: "string"
+        xml:
+          attribute: true
+      generated:
+        type: "boolean"
+        xml:
+          attribute: true
+        default: false
+  AnnotationSet:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        xml:
+          attribute: true
+      ref:
+        type: "string"
+        xml:
+          attribute: true
+      annotation:
+        type: "array"
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        items:
+          $ref: "#/definitions/Annotation"
+  Content:
+    type: "object"
+    properties:
+      content:
+        type: "array"
+        items:
+          $ref: "#/definitions/Serializable"
+  Document:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+        xml:
+          attribute: true
+      feature-set:
+        type: "array"
+        xml:
+          name: "feature"
+          namespace: "http://www.ontotext.com/DocumentSchema"
+          wrapped: true
+        items:
+          $ref: "#/definitions/Feature"
+      document-parts:
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        $ref: "#/definitions/DocumentParts"
+      annotation-sets:
+        type: "array"
+        xml:
+          name: "annotation-set"
+          namespace: "http://www.ontotext.com/DocumentSchema"
+          wrapped: true
+        items:
+          $ref: "#/definitions/AnnotationSet"
+    xml:
+      name: "document"
+      namespace: "http://www.ontotext.com/DocumentSchema"
+  DocumentPart:
+    type: "object"
+    required:
+    - "content"
+    properties:
+      feature-set:
+        type: "array"
+        xml:
+          name: "feature"
+          namespace: "http://www.ontotext.com/DocumentSchema"
+          wrapped: true
+        items:
+          $ref: "#/definitions/Feature"
+      id:
+        type: "string"
+        xml:
+          attribute: true
+      part:
+        type: "string"
+        xml:
+          attribute: true
+      content:
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        $ref: "#/definitions/Content"
+  DocumentParts:
+    type: "object"
+    properties:
+      feature-set:
+        type: "array"
+        xml:
+          name: "feature"
+          namespace: "http://www.ontotext.com/DocumentSchema"
+          wrapped: true
+        items:
+          $ref: "#/definitions/Feature"
+      document-part:
+        type: "array"
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        items:
+          $ref: "#/definitions/DocumentPart"
+  Feature:
+    type: "object"
+    properties:
+      name:
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        $ref: "#/definitions/Name"
+      value:
+        xml:
+          namespace: "http://www.ontotext.com/DocumentSchema"
+        $ref: "#/definitions/Value"
+  Name:
+    type: "object"
+    properties:
+      type:
+        type: "string"
+        xml:
+          attribute: true
+        enum:
+        - "XS_STRING"
+        - "XS_ANY_URI"
+      name:
+        type: "string"
+  Serializable:
+    type: "object"
+  Value:
+    type: "object"
+    properties:
+      type:
+        type: "string"
+        xml:
+          attribute: true
+        enum:
+        - "XS_STRING"
+        - "XS_ANY_URI"
+        - "XS_BOOLEAN"
+        - "XS_DOUBLE"
+        - "XS_LONG"
+        - "XS_INTEGER"
+        - "TNS_COLLECTION"
+        - "XS_DATE"
+      lang:
+        type: "string"
+        xml:
+          namespace: "http://www.w3.org/XML/1998/namespace"
+          attribute: true
+      value:
+        type: "string"
