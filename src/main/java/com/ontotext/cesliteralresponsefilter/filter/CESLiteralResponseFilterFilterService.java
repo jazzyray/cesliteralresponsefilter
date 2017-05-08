@@ -24,10 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.zip.GZIPInputStream;
 
 /** **/
@@ -102,8 +99,9 @@ public class CESLiteralResponseFilterFilterService {
                     List<PredicateLiteral> literals = (concepts.containsKey(concept)) ? concepts.get(concept) : new ArrayList<>();
                     String predicate = bindings.getValue("predicate").stringValue();
                     String literalValue = bindings.getValue("literal").stringValue();
+                    Optional<String> lang =((Literal)bindings.getValue("literal")).getLanguage();
                     IRI type = ((Literal)bindings.getValue("literal")).getDatatype();
-                    literals.add(new PredicateLiteral(predicate, literalValue, type));
+                    literals.add(new PredicateLiteral(predicate, literalValue, type, lang));
                     concepts.put(concept,literals);
                 }
             } catch (Exception e) {
@@ -132,6 +130,9 @@ public class CESLiteralResponseFilterFilterService {
                      Value value = new Value();
                      value.setValue(literal.getLiteral());
                      value.setType(literal.getLiteralType());
+                     if (literal.getLang().isPresent()) {
+                         value.setLang(literal.getLang().get().toString());
+                     }
                      literalFeature.setValue(value);
 
                      annotation.getFeatures().add(literalFeature);

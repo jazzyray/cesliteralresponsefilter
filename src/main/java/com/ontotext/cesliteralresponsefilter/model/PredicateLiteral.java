@@ -7,17 +7,21 @@ import org.eclipse.rdf4j.model.Literal;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.XMLSchema;
 
+import java.util.Optional;
+
 /** **/
 public class PredicateLiteral {
 
     private String predicate;
     private String literal;
     private ValueType literalType;
+    private Optional<String> lang;
 
-    public PredicateLiteral(String predicate, String literal, IRI literalType) {
+    public PredicateLiteral(String predicate, String literal, IRI literalType, Optional<String> lang) {
         this.predicate = predicate;
         this.literal = literal;
         setLiteralType(literalType);
+        this.lang = lang;
     }
 
     public String getPredicate() {
@@ -56,5 +60,17 @@ public class PredicateLiteral {
         } else {
             this.literalType = ValueType.XS_STRING;
         }
+    }
+
+    public void setLiteralType(ValueType literalType) {
+        this.literalType = literalType;
+    }
+
+    public Optional<String> getLang() {
+        return lang;
+    }
+
+    public void setLang(Optional<String> lang) {
+        this.lang = lang;
     }
 }
