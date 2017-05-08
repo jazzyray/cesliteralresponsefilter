@@ -126,7 +126,7 @@ public class CESLiteralResponseFilterFilterService {
                      Feature literalFeature = new Feature();
                      Name name = new Name();
                      name.setName(literal.getPredicate());
-                     name.setType(NameType.XS_STRING);
+                     name.setType(NameType.XS_ANY_URI);
                      literalFeature.setName(name);
 
                      Value value = new Value();
