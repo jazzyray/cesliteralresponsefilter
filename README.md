@@ -69,24 +69,24 @@ docker login -e="." -u="ontotext+ontotext" -p="XXXX" quay.io
 ```
 docker tag ${IMAGE} cesparenttreefiltermock 
 
-docker tag ${IMAGE} quay.io/ontotext/cesliteralresponsefiltermock
+docker tag ${IMAGE} quay.io/ontotext/cesliteralresponsefilter
 
 ```
 
 ### push to quay
 ```
-docker push quay.io/ontotext/cesliteralresponsefiltermock
+docker push quay.io/ontotext/cesliteralresponsefilter
 
 ```
 
 ## Run Interactive
 ```
-docker run --name cesliteralresponsefiltermock -it cesliteralresponsefiltermock /bin/bash
+docker run --name cesliteralresponsefilter -it cesliteralresponsefilter /bin/bash
 ```   
 
 ## Run Daemon
 ```
-docker run --name cesliteralresponsefiltermock -d cesliteralresponsefiltermock 
+docker run --name cesliteralresponsefilter -d cesliteralresponsefilter 
 ```
 
 ## Shell to docker container
